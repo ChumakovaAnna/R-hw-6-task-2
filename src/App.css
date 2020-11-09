@@ -1,38 +1,80 @@
+h1 {
+  margin: 0;
+}
+
+button {
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+
+  background-color: #ffffff;
+  border: 1px solid #838383;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  border: 1px solid #d8639e;
+}
+
+.button_img {
+  width: 2em;
+}
+
 .App {
-  text-align: center;
+  padding: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.note_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note {
+  position: relative;
+  display: flex;
+  padding: 1em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+
+  border: 1px solid #838383;
+}
+
+.button_delete {
+  position: absolute;
+  right: -1.5em;
+  top: -1.5em;
+}
+
+.form {
+  position: relative;
+  display: inline;
+}
+
+.textarea {
+  width: 15em;
+  max-width: 15em;
+  height: 7em;
+  padding: 0.5em;
+}
+
+.textarea:focus {
+  outline: 2px solid #46cfa6;
+  outline-offset: -1px;
+}
+
+.button_save {
+  position: absolute;
+  right: -1.5em;
+  bottom: -1.25em;
 }
